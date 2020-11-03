@@ -1,1 +1,1 @@
-# sicp-exercises
+# SICP notes and exercises
