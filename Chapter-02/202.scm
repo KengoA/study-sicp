@@ -37,5 +37,5 @@
 (define (midpoint-segment s)
     (make-point
         (average (x-point (start-segment s)) (x-point (end-segment s)))
-        (average (y-point (start-segment s) (y-point (end-segment s)))))
+        (average (y-point (start-segment s)) (y-point (end-segment s)))))
     
