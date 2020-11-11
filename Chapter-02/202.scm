@@ -38,4 +38,23 @@
     (make-point
         (average (x-point (start-segment s)) (x-point (end-segment s)))
         (average (y-point (start-segment s)) (y-point (end-segment s)))))
-    
+
+; From P121
+(define (print-point p)
+    (newline)
+    (display "(")
+    (display (x-point p))
+    (display ",")
+    (display (y-point p))
+    (display ")"))
+
+
+; TEST
+(define start (make-point 0 -10))
+(define end (make-point 10 0))
+
+(define seg (make-segment start end))
+
+; Should be (5, -5)
+(print-point (midpoint-segment seg))
+
