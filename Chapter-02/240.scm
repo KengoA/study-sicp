@@ -25,10 +25,11 @@
       (cons low (enumerate-interval (+ low 1) high))))
 
 ; From P158
-(define (accumulate op initial sequence) (if (null? sequence)
-    initial
-    (op (car sequence)
-        (accumulate op initial (cdr sequence)))))
+(define (accumulate op initial sequence)
+    (if (null? sequence)
+        initial
+        (op (car sequence)
+            (accumulate op initial (cdr sequence)))))
 
 ; From P167
 (define (flatmap proc seq)
