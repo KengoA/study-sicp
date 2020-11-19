@@ -134,6 +134,7 @@
             (error "unknown expression type: DERIV" exp))))
 
 ; TEST
+; Should be 2xy + 3y
 (print (deriv '(* x y (+ x 3)) 'x))
 
 
